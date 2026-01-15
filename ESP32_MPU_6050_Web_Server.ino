@@ -4,14 +4,14 @@
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 *********/
-#include <Arduino.h>
-#include <WiFi.h>
+#include <Arduino.h> 
+#include <WiFi.h> 
 #include <AsyncTCP.h>
-#include <ESPAsyncWebServer.h>
-#include <Adafruit_MPU6050.h>
-#include <Adafruit_Sensor.h>
-#include <Arduino_JSON.h>
-#include "LittleFS.h"
+#include <ESPAsyncWebServer.h> 
+#include <Adafruit_MPU6050.h> 
+#include <Adafruit_Sensor.h> 
+#include <Arduino_JSON.h> 
+#include "LittleFS.h" 
 
 // Replace with your network credentials
 const char* ssid = "4G MIFI";
@@ -191,3 +191,4 @@ void loop() {
     lastTimeTemperature = millis();
   }
 }
+
