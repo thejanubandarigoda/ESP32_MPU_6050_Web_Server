@@ -35,9 +35,9 @@ unsigned long temperatureDelay = 1000;
 unsigned long accelerometerDelay = 200;
 
 // Create a sensor object
-Adafruit_MPU6050 mpu;
+Adafruit_MPU6050 mpu; 
 
-sensors_event_t a, g, temp;
+sensors_event_t a, g, temp; 
 
 float gyroX, gyroY, gyroZ;
 float accX, accY, accZ;
@@ -76,12 +76,12 @@ void initWiFi() {
     Serial.print(".");
     delay(1000);
   }
-  Serial.println("");
-  Serial.println(WiFi.localIP());
+  Serial.println(""); 
+  Serial.println(WiFi.localIP()); 
 }
 
 String getGyroReadings(){
-  mpu.getEvent(&a, &g, &temp);
+  mpu.getEvent(&a, &g, &temp); 
 
   float gyroX_temp = g.gyro.x;
   if(abs(gyroX_temp) > gyroXerror)  {
@@ -191,4 +191,5 @@ void loop() {
     lastTimeTemperature = millis();
   }
 }
+
 
