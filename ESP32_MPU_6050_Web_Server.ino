@@ -9,8 +9,8 @@
 #include "LittleFS.h" 
 
 // Replace with your network credentials
-const char* ssid = "4G MIFI";
-const char* password = "thejanu4554";
+const char* ssid = "wifi";
+const char* password = "ps";
 
 // Create AsyncWebServer object on port 80
 AsyncWebServer server(80);
@@ -186,6 +186,7 @@ void loop() {
     lastTimeTemperature = millis();
   }
 }
+
 
 
 
